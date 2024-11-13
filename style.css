@@ -1,0 +1,105 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+  }
+  
+  .navbar .logo {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar ul li {
+    margin: 0 15px;
+  }
+  
+  .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+  }
+  
+  .navbar ul li a:hover {
+    background-color: #45a049;
+    border-radius: 5px;
+  }
+  
+  /* Main Section */
+  main {
+    padding: 20px;
+  }
+  
+  /* Intro Section */
+  .intro {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .intro h1 {
+    font-size: 36px;
+    color: #333;
+  }
+  
+  .intro p {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  /* Form Section */
+  .form-section {
+    display: flex;
+    justify-content: center;
+  }
+  
+  iframe {
+    border: 3px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+  }
+  /* Media Query for smaller screens */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar ul {
+      flex-direction: column;
+    }
+  
+    .form-section iframe {
+      height: 600px;
+    }
+  }
+  
